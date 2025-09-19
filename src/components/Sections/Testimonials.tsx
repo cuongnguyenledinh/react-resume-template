@@ -1,13 +1,13 @@
-import classNames from 'classnames';
-import { FC, memo, UIEventHandler, useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import classNames from "classnames";
+import { FC, memo, UIEventHandler, useCallback, useEffect, useMemo, useRef, useState } from "react";
 
-import { isApple, isMobile } from '../../config';
-import { SectionId, testimonial } from '../../data/data';
-import type { Testimonial } from '../../data/dataDef';
-import useInterval from '../../hooks/useInterval';
-import useWindow from '../../hooks/useWindow';
-import QuoteIcon from '../Icon/QuoteIcon';
-import Section from '../Layout/Section';
+import { isApple, isMobile } from "../../config";
+import { SectionId, testimonial } from "../../data/data";
+import type { Testimonial } from "../../data/dataDef";
+import useInterval from "../../hooks/useInterval";
+import useWindow from "../../hooks/useWindow";
+import QuoteIcon from "../Icon/QuoteIcon";
+import Section from "../Layout/Section";
 
 const Testimonials: FC = memo(() => {
   const [activeIndex, setActiveIndex] = useState<number>(0);
@@ -23,7 +23,7 @@ const Testimonials: FC = memo(() => {
 
   const resolveSrc = useMemo(() => {
     if (!imageSrc) return undefined;
-    return typeof imageSrc === 'string' ? imageSrc : imageSrc.src;
+    return typeof imageSrc === "string" ? imageSrc : imageSrc.src;
   }, [imageSrc]);
 
   // Mobile iOS doesn't allow background-fixed elements
@@ -73,9 +73,9 @@ const Testimonials: FC = memo(() => {
     <Section noPadding sectionId={SectionId.Testimonials}>
       <div
         className={classNames(
-          'flex w-full items-center justify-center bg-cover bg-center px-4 py-16 md:py-24 lg:px-8',
-          parallaxEnabled && 'bg-fixed',
-          { 'bg-neutral-700': !imageSrc },
+          "flex w-full items-center justify-center bg-cover bg-center px-4 py-16 md:py-24 lg:px-8",
+          parallaxEnabled && "bg-fixed",
+          { "bg-neutral-700": !imageSrc },
         )}
         style={imageSrc ? { backgroundImage: `url(${resolveSrc}` } : undefined}>
         <div className="z-10 w-full max-w-screen-md px-4 lg:px-0">
@@ -97,8 +97,8 @@ const Testimonials: FC = memo(() => {
                 return (
                   <button
                     className={classNames(
-                      'h-3 w-3 rounded-full bg-gray-300 transition-all duration-500 sm:h-4 sm:w-4',
-                      isActive ? 'scale-100 opacity-100' : 'scale-75 opacity-60',
+                      "h-3 w-3 rounded-full bg-gray-300 transition-all duration-500 sm:h-4 sm:w-4",
+                      isActive ? "scale-100 opacity-100" : "scale-75 opacity-60",
                     )}
                     disabled={isActive}
                     key={`select-button-${index}`}
@@ -117,8 +117,8 @@ const Testimonial: FC<{ testimonial: Testimonial; isActive: boolean }> = memo(
   ({ testimonial: { text, name, image }, isActive }) => (
     <div
       className={classNames(
-        'flex w-full shrink-0 snap-start snap-always flex-col items-start gap-y-4 p-2 transition-opacity duration-1000 sm:flex-row sm:gap-x-6',
-        isActive ? 'opacity-100' : 'opacity-0',
+        "flex w-full shrink-0 snap-start snap-always flex-col items-start gap-y-4 p-2 transition-opacity duration-1000 sm:flex-row sm:gap-x-6",
+        isActive ? "opacity-100" : "opacity-0",
       )}>
       {image ? (
         <div className="relative h-14 w-14 shrink-0 sm:h-16 sm:w-16">

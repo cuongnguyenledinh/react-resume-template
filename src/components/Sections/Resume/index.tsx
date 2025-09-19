@@ -1,10 +1,10 @@
-import { FC, memo } from 'react';
+import { FC, memo } from "react";
 
-import { education, experience, SectionId, skills } from '../../../data/data';
-import Section from '../../Layout/Section';
-import ResumeSection from './ResumeSection';
-import { SkillGroup } from './Skills';
-import TimelineItem from './TimelineItem';
+import { education, experience, SectionId, skills } from "../../../data/data";
+import Section from "../../Layout/Section";
+import ResumeSection from "./ResumeSection";
+import { SkillGroup } from "./Skills";
+import TimelineItem from "./TimelineItem";
 
 const Resume: FC = memo(() => {
   return (
@@ -33,5 +33,5 @@ const Resume: FC = memo(() => {
   );
 });
 
-Resume.displayName = 'Resume';
+Resume.displayName = "Resume";
 export default Resume;

@@ -1,7 +1,7 @@
-import { useEffect } from 'react';
+import { useEffect } from "react";
 
-import { headerID } from '../components/Sections/Header';
-import { SectionId } from '../data/data';
+import { headerID } from "../components/Sections/Header";
+import { SectionId } from "../data/data";
 
 export const useNavObserver = (selectors: string, handler: (section: SectionId | null) => void) => {
   useEffect(() => {
@@ -15,12 +15,12 @@ export const useNavObserver = (selectors: string, handler: (section: SectionId |
       entries => {
         entries.forEach(entry => {
           const currentY = entry.boundingClientRect.y;
-          const id = entry.target.getAttribute('id');
+          const id = entry.target.getAttribute("id");
           if (headerWrapper) {
             // Create a decision object
             const decision = {
               id,
-              currentIndex: headingsArray.findIndex(heading => heading.getAttribute('id') === id),
+              currentIndex: headingsArray.findIndex(heading => heading.getAttribute("id") === id),
               isIntersecting: entry.isIntersecting,
               currentRatio: entry.intersectionRatio,
               aboveToc: currentY < headerWrapper.getBoundingClientRect().y,
@@ -35,7 +35,7 @@ export const useNavObserver = (selectors: string, handler: (section: SectionId |
               decision.currentRatio > 0 &&
               decision.belowToc
             ) {
-              const currentVisible = headingsArray[decision.currentIndex - 1]?.getAttribute('id');
+              const currentVisible = headingsArray[decision.currentIndex - 1]?.getAttribute("id");
               handler(currentVisible as SectionId);
             }
           }
@@ -44,7 +44,7 @@ export const useNavObserver = (selectors: string, handler: (section: SectionId |
       {
         root: null,
         threshold: 0.1,
-        rootMargin: '0px 0px -70% 0px',
+        rootMargin: "0px 0px -70% 0px",
       },
     );
     // Observe all the Sections

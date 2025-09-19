@@ -1,5 +1,5 @@
-import { useForm, ValidationError } from '@formspree/react';
-import { FC, memo, useCallback, useMemo, useState } from 'react';
+import { useForm, ValidationError } from "@formspree/react";
+import { FC, memo, useCallback, useMemo, useState } from "react";
 
 interface FormData {
   name: string;
@@ -10,15 +10,15 @@ interface FormData {
 const ContactForm: FC = memo(() => {
   const defaultData = useMemo(
     () => ({
-      name: '',
-      email: '',
-      message: '',
+      name: "",
+      email: "",
+      message: "",
     }),
     [],
   );
 
   const [data, setData] = useState<FormData>(defaultData);
-  const [state, handleSubmit] = useForm('xpwjvqdl');
+  const [state, handleSubmit] = useForm("xpwjvqdl");
 
   const onChange = useCallback(
     <T extends HTMLInputElement | HTMLTextAreaElement>(event: React.ChangeEvent<T>): void => {
@@ -47,7 +47,7 @@ const ContactForm: FC = memo(() => {
   // );
 
   const inputClasses =
-    'bg-neutral-700 border-0 focus:border-0 focus:outline-none focus:ring-1 focus:ring-orange-600 rounded-md placeholder:text-neutral-400 placeholder:text-sm text-neutral-200 text-sm';
+    "bg-neutral-700 border-0 focus:border-0 focus:outline-none focus:ring-1 focus:ring-orange-600 rounded-md placeholder:text-neutral-400 placeholder:text-sm text-neutral-200 text-sm";
 
   return (
     <form className="grid min-h-[320px] grid-cols-1 gap-y-4" method="POST" onSubmit={handleSubmit}>
@@ -93,5 +93,5 @@ const ContactForm: FC = memo(() => {
   );
 });
 
-ContactForm.displayName = 'ContactForm';
+ContactForm.displayName = "ContactForm";
 export default ContactForm;

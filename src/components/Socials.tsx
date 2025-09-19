@@ -1,6 +1,6 @@
-import { FC, memo } from 'react';
+import { FC, memo } from "react";
 
-import { socialLinks } from '../data/data';
+import { socialLinks } from "../data/data";
 
 const Socials: FC = memo(() => {
   return (
@@ -19,5 +19,5 @@ const Socials: FC = memo(() => {
   );
 });
 
-Socials.displayName = 'Socials';
+Socials.displayName = "Socials";
 export default Socials;
