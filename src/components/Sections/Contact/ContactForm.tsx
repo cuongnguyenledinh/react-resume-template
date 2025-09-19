@@ -1,5 +1,5 @@
-import {FC, memo, useCallback, useMemo, useState} from 'react';
 import {useForm, ValidationError} from '@formspree/react';
+import {FC, memo, useCallback, useMemo, useState} from 'react';
 
 interface FormData {
   name: string;
@@ -52,8 +52,8 @@ const ContactForm: FC = memo(() => {
   return (
     <form className="grid min-h-[320px] grid-cols-1 gap-y-4" method="POST" onSubmit={handleSubmit}>
       <input
-        id="name"
         className={inputClasses}
+        id="name"
         name="name"
         onChange={onChange}
         placeholder="Name"
@@ -61,19 +61,19 @@ const ContactForm: FC = memo(() => {
         type="text"
       />
       <input
-        id="email"
         autoComplete="email"
         className={inputClasses}
+        id="email"
         name="email"
         onChange={onChange}
         placeholder="Email"
         required
         type="email"
       />
-      <ValidationError prefix="Email" field="email" errors={state.errors} />
+      <ValidationError errors={state.errors} field="email" prefix="Email" />
       <textarea
-        id="message"
         className={inputClasses}
+        id="message"
         maxLength={250}
         name="message"
         onChange={onChange}
@@ -81,12 +81,12 @@ const ContactForm: FC = memo(() => {
         required
         rows={6}
       />
-      <ValidationError prefix="Message" field="message" errors={state.errors} />
+      <ValidationError errors={state.errors} field="message" prefix="Message" />
       <button
         aria-label="Submit contact form"
         className="w-max rounded-full border-2 border-orange-600 bg-stone-900 px-4 py-2 text-sm font-medium text-white shadow-md outline-none hover:bg-stone-800 focus:ring-2 focus:ring-orange-600 focus:ring-offset-2 focus:ring-offset-stone-800"
-        type="submit"
-        disabled={state.submitting}>
+        disabled={state.submitting}
+        type="submit">
         Send Message
       </button>
     </form>
