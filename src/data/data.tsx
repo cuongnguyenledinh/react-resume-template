@@ -107,12 +107,12 @@ export const aboutData: About = {
   profileImageSrc: profilepic,
   description: `Experienced React Native Developer with 6+ years in mobile app development. Proven ability in testing, collaboration, and delivering high-performance apps.`,
   aboutItems: [
-    {label: 'Location', text: 'Ho Chi Minh City, Vietnam', Icon: MapIcon},
-    {label: 'Age', text: '29', Icon: CalendarIcon},
-    {label: 'Nationality', text: 'Vietnamese', Icon: FlagIcon},
-    {label: 'Interests', text: 'Motorcycles, Badminton', Icon: SparklesIcon},
-    {label: 'Study', text: 'Ho Chi Minh City University of Technology (HCMUT)', Icon: AcademicCapIcon},
-    {label: 'Employment', text: 'Quintet Systems', Icon: BuildingOffice2Icon},
+    { label: 'Location', text: 'Ho Chi Minh City, Vietnam', Icon: MapIcon },
+    { label: 'Age', text: '29', Icon: CalendarIcon },
+    { label: 'Nationality', text: 'Vietnamese', Icon: FlagIcon },
+    { label: 'Interests', text: 'Motorcycles, Badminton, Travel, Camping', Icon: SparklesIcon },
+    { label: 'Study', text: 'Ho Chi Minh City University of Technology (HCMUT)', Icon: AcademicCapIcon },
+    { label: 'Employment', text: 'Quintet Systems', Icon: BuildingOffice2Icon },
   ],
 };
 
@@ -189,67 +189,67 @@ export const portfolioItems: PortfolioItem[] = [
   {
     title: 'Project title 1',
     description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    url: 'https://cuongnguyen.dev/',
     image: porfolioImage1,
   },
   {
     title: 'Project title 2',
     description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    url: 'https://cuongnguyen.dev/',
     image: porfolioImage2,
   },
   {
     title: 'Project title 3',
     description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    url: 'https://cuongnguyen.dev/',
     image: porfolioImage3,
   },
   {
     title: 'Project title 4',
     description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    url: 'https://cuongnguyen.dev/',
     image: porfolioImage4,
   },
   {
     title: 'Project title 5',
     description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    url: 'https://cuongnguyen.dev/',
     image: porfolioImage5,
   },
   {
     title: 'Project title 6',
     description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    url: 'https://cuongnguyen.dev/',
     image: porfolioImage6,
   },
   {
     title: 'Project title 7',
     description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    url: 'https://cuongnguyen.dev/',
     image: porfolioImage7,
   },
   {
     title: 'Project title 8',
     description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    url: 'https://cuongnguyen.dev/',
     image: porfolioImage8,
   },
   {
     title: 'Project title 9',
     description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    url: 'https://cuongnguyen.dev/',
     image: porfolioImage9,
   },
   {
     title: 'Project title 10',
     description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    url: 'https://cuongnguyen.dev/',
     image: porfolioImage10,
   },
   {
     title: 'Project title 11',
     description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    url: 'https://cuongnguyen.dev/',
     image: porfolioImage11,
   },
 ];
@@ -452,10 +452,10 @@ export const contact: ContactSection = {
  * Social items
  */
 export const socialLinks: Social[] = [
-  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/cuongnguyenledinh'},
+  { label: 'Github', Icon: GithubIcon, href: 'https://github.com/cuongnguyenledinh' },
   // {label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/8553186/tim-baker'},
-  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/nldcuong/'},
-  {label: 'Facebook', Icon: FacebookIcon, href: 'https://www.facebook.com/nldcuong/'},
+  { label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/nldcuong/' },
+  { label: 'Facebook', Icon: FacebookIcon, href: 'https://www.facebook.com/nldcuong/' },
   // {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/reactresume/'},
   // {label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/TimBakerx'},
 ];
