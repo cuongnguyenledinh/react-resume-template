@@ -9,10 +9,10 @@ import {
 } from '@heroicons/react/24/outline';
 
 import GithubIcon from '../components/Icon/GithubIcon';
-import InstagramIcon from '../components/Icon/InstagramIcon';
+// import InstagramIcon from '../components/Icon/InstagramIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
-import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
-import TwitterIcon from '../components/Icon/TwitterIcon';
+// import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
+// import TwitterIcon from '../components/Icon/TwitterIcon';
 import heroImage from '../images/header-background.webp';
 import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
 import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
@@ -39,6 +39,7 @@ import {
   TestimonialSection,
   TimelineItem,
 } from './dataDef';
+import FacebookIcon from '../components/Icon/FacebookIcon';
 
 /**
  * Page meta data
@@ -69,18 +70,18 @@ export type SectionId = (typeof SectionId)[keyof typeof SectionId];
  */
 export const heroData: Hero = {
   imageSrc: heroImage,
-  name: `I'm Tim Baker.`,
+  name: `I'm Cuong Nguyen.`,
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a Victoria based <strong className="text-stone-100">Full Stack Software Engineer</strong>, currently working
-        at <strong className="text-stone-100">Instant Domains</strong> helping build a modern, mobile-first, domain
-        registrar and site builder.
+        I'm a Vietnamese based <strong className="text-stone-100">Front-end Developer</strong>, currently working at{' '}
+        <strong className="text-stone-100">Quintet Systems</strong>, helping build a modern, mobile-first, React Native
+        SDK version for Cloud at the Light Speed(CALS) - a Low Code Development Platform.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        In my free time time, you can catch me training in <strong className="text-stone-100">Muay Thai</strong>,
-        plucking my <strong className="text-stone-100">banjo</strong>, or exploring beautiful{' '}
-        <strong className="text-stone-100">Vancouver Island</strong>.
+        In my free time, I love playing <strong className="text-stone-100">badminton</strong>, hitting the road on my{' '}
+        <strong className="text-stone-100">motorbike</strong>, and exploring the beauty of{' '}
+        <strong className="text-stone-100">Vietnam</strong>.
       </p>
     </>
   ),
@@ -104,16 +105,14 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `Use this bio section as your way of describing yourself and saying what you do, what technologies you like
-  to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing
-  in.`,
+  description: `Experienced React Native Developer with 6+ years in mobile app development. Proven ability in testing, collaboration, and delivering high-performance apps.`,
   aboutItems: [
-    {label: 'Location', text: 'Victoria, BC', Icon: MapIcon},
+    {label: 'Location', text: 'Ho Chi Minh City, Vietnam', Icon: MapIcon},
     {label: 'Age', text: '29', Icon: CalendarIcon},
-    {label: 'Nationality', text: 'Canadian / Irish', Icon: FlagIcon},
-    {label: 'Interests', text: 'Motorcycles, Muay Thai, Banjos', Icon: SparklesIcon},
-    {label: 'Study', text: 'University of Victoria', Icon: AcademicCapIcon},
-    {label: 'Employment', text: 'Instant Domains, inc.', Icon: BuildingOffice2Icon},
+    {label: 'Nationality', text: 'Vietnamese', Icon: FlagIcon},
+    {label: 'Interests', text: 'Motorcycles, Badminton', Icon: SparklesIcon},
+    {label: 'Study', text: 'Ho Chi Minh City University of Technology (HCMUT)', Icon: AcademicCapIcon},
+    {label: 'Employment', text: 'Quintet Systems', Icon: BuildingOffice2Icon},
   ],
 };
 
@@ -125,16 +124,12 @@ export const skills: SkillGroup[] = [
     name: 'Spoken languages',
     skills: [
       {
-        name: 'English',
+        name: 'Vietnamese',
         level: 10,
       },
       {
-        name: 'French',
-        level: 4,
-      },
-      {
-        name: 'Spanish',
-        level: 3,
+        name: 'English',
+        level: 6,
       },
     ],
   },
@@ -143,15 +138,15 @@ export const skills: SkillGroup[] = [
     skills: [
       {
         name: 'React',
-        level: 9,
-      },
-      {
-        name: 'Typescript',
         level: 7,
       },
       {
-        name: 'GraphQL',
+        name: 'Typescript',
         level: 6,
+      },
+      {
+        name: 'GraphQL',
+        level: 5,
       },
     ],
   },
@@ -160,14 +155,6 @@ export const skills: SkillGroup[] = [
     skills: [
       {
         name: 'Node.js',
-        level: 8,
-      },
-      {
-        name: 'Rust',
-        level: 5,
-      },
-      {
-        name: 'Golang',
         level: 4,
       },
     ],
@@ -185,6 +172,10 @@ export const skills: SkillGroup[] = [
       },
       {
         name: 'Swift',
+        level: 3,
+      },
+      {
+        name: 'Kotlin',
         level: 3,
       },
     ],
@@ -268,39 +259,135 @@ export const portfolioItems: PortfolioItem[] = [
  */
 export const education: TimelineItem[] = [
   {
-    date: 'April 2007',
-    location: 'Clown college',
-    title: 'Masters in Beer tasting',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
-  },
-  {
-    date: 'March 2003',
-    location: 'School of Business',
-    title: 'What did you study 101',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+    date: '2014 - 2018',
+    location: 'Ho Chi Minh City University of Technology (HCMUT)',
+    title: 'Computer Science',
+    content: <p>Major: Computer Science. 3 years at HCMUT.</p>,
   },
 ];
 
 export const experience: TimelineItem[] = [
   {
-    date: 'March 2010 - Present',
-    location: 'Awesome Development Company',
-    title: 'Senior UX Engineer',
+    date: 'OCT 2024  -  PRESENT',
+    location: 'Quintet Systems, R&D Department',
+    title: 'Senior Mobile Developer',
     content: (
       <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
+        <p>
+          <strong>Project CALS SDK - Mobile React Native SDK</strong>
+        </p>
+        <p>
+          <strong>Responsibilities:</strong>
+        </p>
+        <ul>
+          <li>• Research and build CALS React Native SDK based on the current native versions.</li>
+          <li>• Feedback on UI/UX.</li>
+          <li>• Write documentation.</li>
+          <li>• Support other projects on bug fixing.</li>
+        </ul>
+        <p>
+          <strong>Features: </strong>Low Code Development Platform
+        </p>
+        <p>
+          <strong>Technology: </strong>Zustand, nitro/native module, AWS-Amplify, private Gitlab package, CI/CD
+        </p>
       </p>
     ),
   },
   {
-    date: 'March 2007 - February 2010',
-    location: 'Garage Startup Studio',
-    title: 'Junior bug fixer',
+    date: 'OCT 2022  -  AUG 2024',
+    location: 'Bamboo Careers',
+    title: 'Mobile Developer',
     content: (
       <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
+        <p>
+          <strong>Project Bamboo Careers - Mobile App</strong>
+        </p>
+        <p>
+          <strong>Responsibilities:</strong>
+        </p>
+        <ul>
+          <li>• Build from scratch.</li>
+          <li>• Upload to App Store & Play Store.</li>
+          <li>• Handle back-end side using Firestore Database.</li>
+          <li>• Feedback on UI/UX.</li>
+        </ul>
+        <p>
+          <strong>Features: </strong>Business app, Career Paths, Salary Advisor, Chatbot
+        </p>
+        <p>
+          <strong>Technology: </strong>Redux, Firestore Database, Firebase services, IAP, ChatGPT
+        </p>
+      </p>
+    ),
+  },
+  {
+    date: 'OCT 2022  -  APR 2023',
+    location: 'Asure Pro',
+    title: 'Mobile Developer',
+    content: (
+      <p>
+        <p>
+          <strong>Project Long Heng & Long Heng Biz - Mobile App</strong>
+        </p>
+        <p>
+          <strong>Responsibilities:</strong>
+        </p>
+        <ul>
+          <li>• Build from scratch.</li>
+          <li>• Upload to App Store & Play Store.</li>
+          <li>• Feedback on UI/UX.</li>
+        </ul>
+        <p>
+          <strong>Features: </strong>Lifestyle app, Air-con service provider
+        </p>
+        <p>
+          <strong>Technology: </strong>Redux
+        </p>
+      </p>
+    ),
+  },
+  {
+    date: 'Aug 2021  -  Oct 2022',
+    location: 'Vietcetera',
+    title: 'Software Developer- React Native/ReactJS/NodeJS',
+    content: (
+      <p>
+        <p>
+          <strong>App Vietcetera:</strong>
+        </p>
+        <p>
+          <strong>Responsibilities:</strong>
+        </p>
+        <ul>
+          <li>• Rebuild project from scratch.</li>
+          <li>• Analyze requirements & make decisions on technical solutions.</li>
+          <li>• Write documentation.</li>
+          <li>• Suggest ideas, research new technologies.</li>
+          <li>• Feedback on UI/UX.</li>
+        </ul>
+        <p>
+          <strong>Features: </strong>Read Articles, Listen Podcast, Watch Video
+        </p>
+        <p>
+          <strong>Technology: </strong>Redux, RESTful API, GA4, SmartOcto
+        </p>
+        <br />
+        <p>
+          <strong>Web CMS Vietcetera:</strong>
+        </p>
+        <p>
+          <strong>Responsibilities:</strong>
+        </p>
+        <ul>
+          <li>• Build web CMS</li>
+        </ul>
+        <p>
+          <strong>Features: </strong>Podcast Management, Notification Management, Article Management,...
+        </p>
+        <p>
+          <strong>Technology: </strong>ReactJS
+        </p>
       </p>
     ),
   },
@@ -336,27 +423,27 @@ export const testimonial: TestimonialSection = {
 
 export const contact: ContactSection = {
   headerText: 'Get in touch.',
-  description: 'Here is a good spot for a message to your readers to let them know how best to reach out to you.',
+  description: "Feel free to reach out — I'd love to hear from you!",
   items: [
     {
       type: ContactType.Email,
-      text: 'reachout@timbaker.me',
-      href: 'mailto:reachout@timbaker.me',
+      text: 'cuongnguyenledinh@gmail.com',
+      href: 'mailto:cuongnguyenledinh@gmail.com',
     },
     {
       type: ContactType.Location,
-      text: 'Victoria BC, Canada',
-      href: 'https://www.google.ca/maps/place/Victoria,+BC/@48.4262362,-123.376775,14z',
+      text: 'Ho Chi Minh City, Vietnam',
+      href: 'https://maps.app.goo.gl/HypJLNccc3k2421i7',
     },
     {
-      type: ContactType.Instagram,
-      text: '@tbakerx',
-      href: 'https://www.instagram.com/tbakerx/',
+      type: ContactType.Facebook,
+      text: '@nldcuong',
+      href: 'https://www.facebook.com/@nldcuong',
     },
     {
       type: ContactType.Github,
-      text: 'tbakerx',
-      href: 'https://github.com/tbakerx',
+      text: 'cuongnguyenledinh',
+      href: 'https://github.com/cuongnguyenledinh',
     },
   ],
 };
@@ -365,9 +452,10 @@ export const contact: ContactSection = {
  * Social items
  */
 export const socialLinks: Social[] = [
-  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/tbakerx'},
-  {label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/8553186/tim-baker'},
-  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/timbakerx/'},
-  {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/reactresume/'},
-  {label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/TimBakerx'},
+  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/cuongnguyenledinh'},
+  // {label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/8553186/tim-baker'},
+  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/nldcuong/'},
+  {label: 'Facebook', Icon: FacebookIcon, href: 'https://www.facebook.com/nldcuong/'},
+  // {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/reactresume/'},
+  // {label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/TimBakerx'},
 ];
