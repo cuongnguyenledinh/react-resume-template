@@ -14,7 +14,8 @@ import GithubIcon from "../components/Icon/GithubIcon";
 import LinkedInIcon from "../components/Icon/LinkedInIcon";
 // import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
 // import TwitterIcon from '../components/Icon/TwitterIcon';
-import heroImage from "../images/header-background.webp";
+// import heroImage from "../images/header-background.webp";
+import heroImage from "../images/bg_dalat.jpg";
 import porfolioImage3 from "../images/portfolio/cuongnguyen_dev.png";
 import porfolioImage4 from "../images/portfolio/longheng_1.jpg";
 import porfolioImage5 from "../images/portfolio/polymate_1.jpg";
@@ -299,7 +300,7 @@ export const experience: TimelineItemType[] = [
           <strong>Features: </strong>Low Code Development Platform
         </p>
         <p>
-          <strong>Technology: </strong>Zustand, nitro/native module, AWS-Amplify, private Gitlab package, CI/CD
+          <strong>Technology: </strong>Zustand, Nitro/Native module, AWS-Amplify, Private Gitlab package, CI/CD
         </p>
       </div>
     ),
@@ -313,12 +314,12 @@ export const experience: TimelineItemType[] = [
         <p>
           <strong>Project Bamboo Careers - Mobile App</strong>
         </p>
+        <p>Joined Bamboo Careers at its inception as an early team member.</p>
         <p>
           <strong>Responsibilities:</strong>
         </p>
         <ul>
-          <li>• Build from scratch.</li>
-          <li>• Upload to App Store & Play Store.</li>
+          <li>• Build & upload app to App Store & Play Store.</li>
           <li>• Handle back-end side using Firestore Database.</li>
           <li>• Feedback on UI/UX.</li>
         </ul>
@@ -341,11 +342,13 @@ export const experience: TimelineItemType[] = [
           <strong>Project Long Heng & Long Heng Biz - Mobile App</strong>
         </p>
         <p>
+          <strong>Part-time - Oursource project</strong>
+        </p>
+        <p>
           <strong>Responsibilities:</strong>
         </p>
         <ul>
-          <li>• Build from scratch.</li>
-          <li>• Upload to App Store & Play Store.</li>
+          <li>• Build & upload app to App Store & Play Store.</li>
           <li>• Feedback on UI/UX.</li>
         </ul>
         <p>
@@ -374,6 +377,7 @@ export const experience: TimelineItemType[] = [
           <li>• Analyze requirements & make decisions on technical solutions.</li>
           <li>• Write documentation.</li>
           <li>• Suggest ideas, research new technologies.</li>
+          <li>• Mentor & review code for junior team member.</li>
           <li>• Feedback on UI/UX.</li>
         </ul>
         <p>
