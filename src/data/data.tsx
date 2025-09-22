@@ -14,25 +14,25 @@ import GithubIcon from "../components/Icon/GithubIcon";
 import LinkedInIcon from "../components/Icon/LinkedInIcon";
 // import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
 // import TwitterIcon from '../components/Icon/TwitterIcon';
-// import heroImage from "../images/header-background.webp";
-import heroImage from "../images/bg_dalat.jpg";
-import porfolioImage3 from "../images/portfolio/cuongnguyen_dev.png";
-import porfolioImage4 from "../images/portfolio/longheng_1.jpg";
-import porfolioImage5 from "../images/portfolio/polymate_1.jpg";
-// import porfolioImage1 from "../images/portfolio/portfolio-1.jpg";
-// import porfolioImage2 from "../images/portfolio/portfolio-2.jpg";
-// import porfolioImage3 from "../images/portfolio/portfolio-3.jpg";
-// import porfolioImage4 from "../images/portfolio/portfolio-4.jpg";
-// import porfolioImage5 from "../images/portfolio/portfolio-5.jpg";
-// import porfolioImage6 from "../images/portfolio/portfolio-6.jpg";
-// import porfolioImage7 from "../images/portfolio/portfolio-7.jpg";
-// import porfolioImage8 from "../images/portfolio/portfolio-8.jpg";
-// import porfolioImage9 from "../images/portfolio/portfolio-9.jpg";
-// import porfolioImage10 from "../images/portfolio/portfolio-10.jpg";
-// import porfolioImage11 from "../images/portfolio/portfolio-11.jpg";
-import porfolioImage1 from "../images/portfolio/vietcetera_1.jpg";
-import porfolioImage2 from "../images/portfolio/vietcetera_2.jpg";
-import profilepic from "../images/profilepic.jpg";
+import heroImage from "../images/header-background.webp";
+// import heroImage from "../images/bg_dalat.jpg";
+import portfolioImage3 from "../images/portfolio/cuongnguyen_dev.png";
+import portfolioImage4 from "../images/portfolio/longheng_1.jpg";
+import portfolioImage5 from "../images/portfolio/polymate_1.jpg";
+import portfolioImage1 from "../images/portfolio/vietcetera_1.jpg";
+import portfolioImage2 from "../images/portfolio/vietcetera_2.jpg";
+// import portfolioImage1 from "../images/portfolio/portfolio-1.jpg";
+// import portfolioImage2 from "../images/portfolio/portfolio-2.jpg";
+// import portfolioImage3 from "../images/portfolio/portfolio-3.jpg";
+// import portfolioImage4 from "../images/portfolio/portfolio-4.jpg";
+// import portfolioImage5 from "../images/portfolio/portfolio-5.jpg";
+// import portfolioImage6 from "../images/portfolio/portfolio-6.jpg";
+// import portfolioImage7 from "../images/portfolio/portfolio-7.jpg";
+// import portfolioImage8 from "../images/portfolio/portfolio-8.jpg";
+// import portfolioImage9 from "../images/portfolio/portfolio-9.jpg";
+// import portfolioImage10 from "../images/portfolio/portfolio-10.jpg";
+// import portfolioImage11 from "../images/portfolio/portfolio-11.jpg";
+import profilePic from "../images/profile_pic.jpg";
 import testimonialImage from "../images/testimonial.webp";
 import {
   About,
@@ -111,7 +111,7 @@ export const heroData: Hero = {
  * About section
  */
 export const aboutData: About = {
-  profileImageSrc: profilepic,
+  profileImageSrc: profilePic,
   description: `Experienced React Native Developer with 6+ years in mobile app development. Proven ability in testing, collaboration, and delivering high-performance apps.`,
   aboutItems: [
     { label: "Location", text: "Ho Chi Minh City, Vietnam", Icon: MapIcon },
@@ -198,70 +198,70 @@ export const portfolioItems: PortfolioItem[] = [
     description:
       "A content hub connecting Vietnam with the world, offering free access to articles with save and share features.",
     url: "https://apps.apple.com/us/app/vietcetera/id1564202068",
-    image: porfolioImage1,
+    image: portfolioImage1,
   },
   {
     title: "Vietcetera Play Store",
     description:
       "You can read all the content of Vietcetera for free, save and share articles, and listen to podcasts.",
     url: "https://play.google.com/store/apps/details?id=com.vietcetera&hl=vi",
-    image: porfolioImage2,
+    image: portfolioImage2,
   },
   {
     title: "Portfolio Website cuongnguyen.dev",
     description: "My personal portfolio website, built with Next.js",
     url: "https://cuongnguyen.dev/",
-    image: porfolioImage3,
+    image: portfolioImage3,
   },
   {
     title: "Long Heng App",
     description:
       "Long Heng Air-Con Design Pte Ltd specialises in air conditioning installation, maintenance and cleaning service in Singapore.",
     url: "https://cuongnguyen.dev/",
-    image: porfolioImage4,
+    image: portfolioImage4,
   },
   {
     title: "Polymate App",
     description:
       "Polymate - a geolocated social network with verified profiles that ensures real-time, authentic content while rewarding its users.",
     url: "https://cuongnguyen.dev/",
-    image: porfolioImage5,
+    image: portfolioImage5,
   },
   // {
   //   title: "Project title 6",
   //   description: "Give a short description of your project here.",
   //   url: "https://cuongnguyen.dev/",
-  //   image: porfolioImage6,
+  //   image: portfolioImage6,
   // },
   // {
   //   title: "Project title 7",
   //   description: "Give a short description of your project here.",
   //   url: "https://cuongnguyen.dev/",
-  //   image: porfolioImage7,
+  //   image: portfolioImage7,
   // },
   // {
   //   title: "Project title 8",
   //   description: "Give a short description of your project here.",
   //   url: "https://cuongnguyen.dev/",
-  //   image: porfolioImage8,
+  //   image: portfolioImage8,
   // },
   // {
   //   title: "Project title 9",
   //   description: "Give a short description of your project here.",
   //   url: "https://cuongnguyen.dev/",
-  //   image: porfolioImage9,
+  //   image: portfolioImage9,
   // },
   // {
   //   title: "Project title 10",
   //   description: "Give a short description of your project here.",
   //   url: "https://cuongnguyen.dev/",
-  //   image: porfolioImage10,
+  //   image: portfolioImage10,
   // },
   // {
   //   title: "Project title 11",
   //   description: "Give a short description of your project here.",
   //   url: "https://cuongnguyen.dev/",
-  //   image: porfolioImage11,
+  //   image: portfolioImage11,
   // },
 ];
 
