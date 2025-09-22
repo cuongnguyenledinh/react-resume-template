@@ -80,9 +80,9 @@ export const heroData: Hero = {
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a Vietnamese based <strong className="text-stone-100">Front-end Developer</strong>, currently working at{" "}
-        <strong className="text-stone-100">Quintet Systems</strong>, helping build a modern, mobile-first, React Native
-        SDK version for Cloud at the Light Speed(CALS) - a Low Code Development Platform.
+        I'm a Vietnamese-based <strong className="text-stone-100">Mobile Developer</strong>, currently working at{" "}
+        <strong className="text-stone-100">Quintet Systems</strong> as part of the R&D team, helping develop{" "}
+        <strong>Cloud at the Light Speed (CALS)</strong> - a modern Low Code Development Platform.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
         In my free time, I love playing <strong className="text-stone-100">badminton</strong>, hitting the road on my{" "}
