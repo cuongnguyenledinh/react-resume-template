@@ -15,17 +15,22 @@ import LinkedInIcon from "../components/Icon/LinkedInIcon";
 // import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
 // import TwitterIcon from '../components/Icon/TwitterIcon';
 import heroImage from "../images/header-background.webp";
-import porfolioImage1 from "../images/portfolio/portfolio-1.jpg";
-import porfolioImage2 from "../images/portfolio/portfolio-2.jpg";
-import porfolioImage3 from "../images/portfolio/portfolio-3.jpg";
-import porfolioImage4 from "../images/portfolio/portfolio-4.jpg";
-import porfolioImage5 from "../images/portfolio/portfolio-5.jpg";
-import porfolioImage6 from "../images/portfolio/portfolio-6.jpg";
-import porfolioImage7 from "../images/portfolio/portfolio-7.jpg";
-import porfolioImage8 from "../images/portfolio/portfolio-8.jpg";
-import porfolioImage9 from "../images/portfolio/portfolio-9.jpg";
-import porfolioImage10 from "../images/portfolio/portfolio-10.jpg";
-import porfolioImage11 from "../images/portfolio/portfolio-11.jpg";
+import porfolioImage3 from "../images/portfolio/cuongnguyen_dev.png";
+import porfolioImage4 from "../images/portfolio/longheng_1.jpg";
+import porfolioImage5 from "../images/portfolio/polymate_1.jpg";
+// import porfolioImage1 from "../images/portfolio/portfolio-1.jpg";
+// import porfolioImage2 from "../images/portfolio/portfolio-2.jpg";
+// import porfolioImage3 from "../images/portfolio/portfolio-3.jpg";
+// import porfolioImage4 from "../images/portfolio/portfolio-4.jpg";
+// import porfolioImage5 from "../images/portfolio/portfolio-5.jpg";
+// import porfolioImage6 from "../images/portfolio/portfolio-6.jpg";
+// import porfolioImage7 from "../images/portfolio/portfolio-7.jpg";
+// import porfolioImage8 from "../images/portfolio/portfolio-8.jpg";
+// import porfolioImage9 from "../images/portfolio/portfolio-9.jpg";
+// import porfolioImage10 from "../images/portfolio/portfolio-10.jpg";
+// import porfolioImage11 from "../images/portfolio/portfolio-11.jpg";
+import porfolioImage1 from "../images/portfolio/vietcetera_1.jpg";
+import porfolioImage2 from "../images/portfolio/vietcetera_2.jpg";
 import profilepic from "../images/profilepic.jpg";
 import testimonialImage from "../images/testimonial.webp";
 import {
@@ -91,6 +96,7 @@ export const heroData: Hero = {
       text: "Resume",
       primary: true,
       Icon: ArrowDownTrayIcon,
+      target: "_blank",
     },
     {
       href: `#${SectionId.Contact}`,
@@ -187,71 +193,75 @@ export const skills: SkillGroup[] = [
  */
 export const portfolioItems: PortfolioItem[] = [
   {
-    title: "Project title 1",
-    description: "Give a short description of your project here.",
-    url: "https://cuongnguyen.dev/",
+    title: "Vietcetera App Store",
+    description:
+      "A content hub connecting Vietnam with the world, offering free access to articles with save and share features.",
+    url: "https://apps.apple.com/us/app/vietcetera/id1564202068",
     image: porfolioImage1,
   },
   {
-    title: "Project title 2",
-    description: "Give a short description of your project here.",
-    url: "https://cuongnguyen.dev/",
+    title: "Vietcetera Play Store",
+    description:
+      "You can read all the content of Vietcetera for free, save and share articles, and listen to podcasts.",
+    url: "https://play.google.com/store/apps/details?id=com.vietcetera&hl=vi",
     image: porfolioImage2,
   },
   {
-    title: "Project title 3",
-    description: "Give a short description of your project here.",
+    title: "Portfolio Website cuongnguyen.dev",
+    description: "My personal portfolio website, built with Next.js",
     url: "https://cuongnguyen.dev/",
     image: porfolioImage3,
   },
   {
-    title: "Project title 4",
-    description: "Give a short description of your project here.",
+    title: "Long Heng App",
+    description:
+      "Long Heng Air-Con Design Pte Ltd specialises in air conditioning installation, maintenance and cleaning service in Singapore.",
     url: "https://cuongnguyen.dev/",
     image: porfolioImage4,
   },
   {
-    title: "Project title 5",
-    description: "Give a short description of your project here.",
+    title: "Polymate App",
+    description:
+      "Polymate - a geolocated social network with verified profiles that ensures real-time, authentic content while rewarding its users.",
     url: "https://cuongnguyen.dev/",
     image: porfolioImage5,
   },
-  {
-    title: "Project title 6",
-    description: "Give a short description of your project here.",
-    url: "https://cuongnguyen.dev/",
-    image: porfolioImage6,
-  },
-  {
-    title: "Project title 7",
-    description: "Give a short description of your project here.",
-    url: "https://cuongnguyen.dev/",
-    image: porfolioImage7,
-  },
-  {
-    title: "Project title 8",
-    description: "Give a short description of your project here.",
-    url: "https://cuongnguyen.dev/",
-    image: porfolioImage8,
-  },
-  {
-    title: "Project title 9",
-    description: "Give a short description of your project here.",
-    url: "https://cuongnguyen.dev/",
-    image: porfolioImage9,
-  },
-  {
-    title: "Project title 10",
-    description: "Give a short description of your project here.",
-    url: "https://cuongnguyen.dev/",
-    image: porfolioImage10,
-  },
-  {
-    title: "Project title 11",
-    description: "Give a short description of your project here.",
-    url: "https://cuongnguyen.dev/",
-    image: porfolioImage11,
-  },
+  // {
+  //   title: "Project title 6",
+  //   description: "Give a short description of your project here.",
+  //   url: "https://cuongnguyen.dev/",
+  //   image: porfolioImage6,
+  // },
+  // {
+  //   title: "Project title 7",
+  //   description: "Give a short description of your project here.",
+  //   url: "https://cuongnguyen.dev/",
+  //   image: porfolioImage7,
+  // },
+  // {
+  //   title: "Project title 8",
+  //   description: "Give a short description of your project here.",
+  //   url: "https://cuongnguyen.dev/",
+  //   image: porfolioImage8,
+  // },
+  // {
+  //   title: "Project title 9",
+  //   description: "Give a short description of your project here.",
+  //   url: "https://cuongnguyen.dev/",
+  //   image: porfolioImage9,
+  // },
+  // {
+  //   title: "Project title 10",
+  //   description: "Give a short description of your project here.",
+  //   url: "https://cuongnguyen.dev/",
+  //   image: porfolioImage10,
+  // },
+  // {
+  //   title: "Project title 11",
+  //   description: "Give a short description of your project here.",
+  //   url: "https://cuongnguyen.dev/",
+  //   image: porfolioImage11,
+  // },
 ];
 
 /**
@@ -272,7 +282,7 @@ export const experience: TimelineItemType[] = [
     location: "Quintet Systems, R&D Department",
     title: "Senior Mobile Developer",
     content: (
-      <p>
+      <div>
         <p>
           <strong>Project CALS SDK - Mobile React Native SDK</strong>
         </p>
@@ -291,7 +301,7 @@ export const experience: TimelineItemType[] = [
         <p>
           <strong>Technology: </strong>Zustand, nitro/native module, AWS-Amplify, private Gitlab package, CI/CD
         </p>
-      </p>
+      </div>
     ),
   },
   {
@@ -299,7 +309,7 @@ export const experience: TimelineItemType[] = [
     location: "Bamboo Careers",
     title: "Mobile Developer",
     content: (
-      <p>
+      <div>
         <p>
           <strong>Project Bamboo Careers - Mobile App</strong>
         </p>
@@ -318,7 +328,7 @@ export const experience: TimelineItemType[] = [
         <p>
           <strong>Technology: </strong>Redux, Firestore Database, Firebase services, IAP, ChatGPT
         </p>
-      </p>
+      </div>
     ),
   },
   {
@@ -326,7 +336,7 @@ export const experience: TimelineItemType[] = [
     location: "Asure Pro",
     title: "Mobile Developer",
     content: (
-      <p>
+      <div>
         <p>
           <strong>Project Long Heng & Long Heng Biz - Mobile App</strong>
         </p>
@@ -344,7 +354,7 @@ export const experience: TimelineItemType[] = [
         <p>
           <strong>Technology: </strong>Redux
         </p>
-      </p>
+      </div>
     ),
   },
   {
@@ -352,9 +362,9 @@ export const experience: TimelineItemType[] = [
     location: "Vietcetera",
     title: "Software Developer- React Native/ReactJS/NodeJS",
     content: (
-      <p>
+      <div>
         <p>
-          <strong>App Vietcetera:</strong>
+          <strong>App Vietcetera</strong>
         </p>
         <p>
           <strong>Responsibilities:</strong>
@@ -374,7 +384,7 @@ export const experience: TimelineItemType[] = [
         </p>
         <br />
         <p>
-          <strong>Web CMS Vietcetera:</strong>
+          <strong>Web CMS Vietcetera</strong>
         </p>
         <p>
           <strong>Responsibilities:</strong>
@@ -388,7 +398,7 @@ export const experience: TimelineItemType[] = [
         <p>
           <strong>Technology: </strong>ReactJS
         </p>
-      </p>
+      </div>
     ),
   },
 ];

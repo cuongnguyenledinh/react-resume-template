@@ -25,6 +25,7 @@ const Header: FC = memo(() => {
   return (
     <>
       <MobileNav currentSection={currentSection} navSections={navSections} />
+
       <DesktopNav currentSection={currentSection} navSections={navSections} />
     </>
   );
@@ -36,6 +37,7 @@ const DesktopNav: FC<{ navSections: SectionId[]; currentSection: SectionId | nul
       "-m-1.5 p-1.5 rounded-md font-bold first-letter:uppercase hover:transition-colors hover:duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-500 sm:hover:text-orange-500 text-neutral-100";
     const activeClass = classNames(baseClass, "text-orange-500");
     const inactiveClass = classNames(baseClass, "text-neutral-100");
+
     return (
       <header className="fixed top-0 z-50 hidden w-full bg-neutral-900/50 p-4 backdrop-blur sm:block" id={headerID}>
         <nav className="flex justify-center gap-x-8">
@@ -66,6 +68,7 @@ const MobileNav: FC<{ navSections: SectionId[]; currentSection: SectionId | null
       "p-2 rounded-md first-letter:uppercase transition-colors duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-500";
     const activeClass = classNames(baseClass, "bg-neutral-900 text-white font-bold");
     const inactiveClass = classNames(baseClass, "text-neutral-200 font-medium");
+
     return (
       <>
         <button
@@ -73,8 +76,10 @@ const MobileNav: FC<{ navSections: SectionId[]; currentSection: SectionId | null
           className="fixed right-2 top-2 z-40 rounded-md bg-orange-500 p-2 ring-offset-gray-800/60 hover:bg-orange-400 focus:outline-none focus:ring-0 focus-visible:ring-2 focus-visible:ring-orange-500 focus-visible:ring-offset-2 sm:hidden"
           onClick={toggleOpen}>
           <Bars3BottomRightIcon className="h-8 w-8 text-white" />
+
           <span className="sr-only">Open sidebar</span>
         </button>
+
         <Transition.Root as={Fragment} show={isOpen}>
           <Dialog as="div" className="fixed inset-0 z-40 flex sm:hidden" onClose={toggleOpen}>
             <Transition.Child
@@ -87,6 +92,7 @@ const MobileNav: FC<{ navSections: SectionId[]; currentSection: SectionId | null
               leaveTo="opacity-0">
               <Dialog.Overlay className="fixed inset-0 bg-stone-900 bg-opacity-75" />
             </Transition.Child>
+
             <Transition.Child
               as={Fragment}
               enter="transition ease-in-out duration-300 transform"

@@ -1,5 +1,5 @@
 import { StaticImageData } from "next/image";
-import { FC, ForwardRefExoticComponent, SVGProps } from "react";
+import { FC, ForwardRefExoticComponent, HTMLAttributeAnchorTarget, SVGProps } from "react";
 
 import { IconProps } from "../components/Icon/Icon";
 
@@ -30,6 +30,7 @@ export interface Hero {
 interface HeroActionItem {
   href: string;
   text: string;
+  target?: HTMLAttributeAnchorTarget | undefined;
   primary?: boolean;
   Icon?: ForwardRefExoticComponent<Omit<SVGProps<SVGSVGElement>, "ref">>;
 }

@@ -62,7 +62,7 @@ const Testimonials: FC = memo(() => {
     setScrollValue(event.currentTarget.scrollLeft);
   }, []);
 
-  useInterval(next, 10000);
+  useInterval(next, 8000);
 
   // If no testimonials, don't render the section
   if (!testimonials.length) {
@@ -86,14 +86,17 @@ const Testimonials: FC = memo(() => {
               ref={scrollContainer}>
               {testimonials.map((testimonial, index) => {
                 const isActive = index === activeIndex;
+
                 return (
                   <Testimonial isActive={isActive} key={`${testimonial.name}-${index}`} testimonial={testimonial} />
                 );
               })}
             </div>
+
             <div className="flex gap-x-4">
               {[...Array(testimonials.length)].map((_, index) => {
                 const isActive = index === activeIndex;
+
                 return (
                   <button
                     className={classNames(
@@ -123,6 +126,7 @@ const Testimonial: FC<{ testimonial: Testimonial; isActive: boolean }> = memo(
       {image ? (
         <div className="relative h-14 w-14 shrink-0 sm:h-16 sm:w-16">
           <QuoteIcon className="absolute -left-2 -top-2 h-4 w-4 stroke-black text-white" />
+
           <img className="h-full w-full rounded-full" src={image} />
         </div>
       ) : (
@@ -130,6 +134,7 @@ const Testimonial: FC<{ testimonial: Testimonial; isActive: boolean }> = memo(
       )}
       <div className="flex flex-col gap-y-4">
         <p className="prose prose-sm font-medium italic text-white sm:prose-base">{text}</p>
+
         <p className="text-xs italic text-white sm:text-sm md:text-base lg:text-lg">-- {name}</p>
       </div>
     </div>
