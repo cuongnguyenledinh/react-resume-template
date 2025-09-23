@@ -56,3 +56,38 @@ th {
 th {
   font-weight: 600;
 }
+
+.work-item {
+  // margin-bottom: 2rem;
+  padding: 1rem;
+  border-left: 3px solid #4f46e5; /* nice accent color */
+  background: #f9fafb; /* subtle background */
+  border-radius: 8px;
+}
+
+.work-item h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 0;
+  color: #111827;
+}
+
+.work-item .work-time {
+  font-size: 1rem;
+  color: #6b7280; /* muted gray */
+  margin: 0.25rem 0 1rem;
+}
+
+.work-item ul {
+  margin: 0.5rem 0 1rem 1.25rem;
+  list-style-type: disc;
+}
+
+.work-item li {
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+}
+
+.work-item p {
+  margin: 0.5rem 0;
+}

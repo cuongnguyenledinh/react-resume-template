@@ -271,63 +271,57 @@ export const portfolioItems: PortfolioItem[] = [
 export const education: TimelineItemType[] = [
   {
     date: "2014 - 2017",
-    location: "Ho Chi Minh City University of Technology (HCMUT)",
-    title: "Computer Science",
+    location: "Computer Science",
+    title: "Ho Chi Minh City University of Technology (HCMUT)",
     content: <p>Major: Computer Science</p>,
   },
 ];
 
 export const experience: TimelineItemType[] = [
   {
-    date: "OCT 2024  -  PRESENT",
+    date: "Oct 2024 - Present",
     location: "Quintet Systems, R&D Department",
-    title: "Senior Mobile Developer",
+    title: "Project CALS SDK - Senior Mobile Developer",
     content: (
       <div>
-        <p>
-          <strong>Project CALS SDK - Mobile React Native SDK</strong>
-        </p>
-        <p>
-          <strong>Responsibilities:</strong>
-        </p>
         <ul>
-          <li>• Research and build CALS React Native SDK based on the current native versions.</li>
-          <li>• Feedback on UI/UX.</li>
-          <li>• Write documentation.</li>
-          <li>• Support other projects on bug fixing.</li>
+          <li>Research and build the CALS React Native SDK based on existing native SDK.</li>
+          <li>Provided UI/UX feedback to improve developer experience.</li>
+          <li>Authored documentation to support adoption and integration across teams.</li>
+          <li>Supported other projects with bug fixing and SDK integration guidance.</li>
         </ul>
         <p>
-          <strong>Features: </strong>Low Code Development Platform
+          <strong>Features: </strong>Cloud at the Light Speed(CALS) - Low Code Development Platform
         </p>
         <p>
-          <strong>Technology: </strong>Zustand, Nitro/Native module, AWS-Amplify, Private Gitlab package, CI/CD
+          <strong>Tech stack: </strong>Zustand, Nitro/Native module, AWS-Amplify, Private Gitlab package, CI/CD
         </p>
       </div>
     ),
   },
   {
-    date: "OCT 2022  -  AUG 2024",
+    date: "Oct 2022 - Aug 2024",
     location: "Bamboo Careers",
-    title: "Mobile Developer",
+    title: "Bamboo Careers - Mobile Developer",
     content: (
       <div>
-        <p>
-          <strong>Project Bamboo Careers - Mobile App</strong>
-        </p>
-        <p>Joined Bamboo Careers at its inception as an early team member.</p>
-        <p>
-          <strong>Responsibilities:</strong>
-        </p>
         <ul>
-          <li>• Build & upload app to App Store & Play Store.</li>
-          <li>• Handle back-end side using Firestore Database.</li>
-          <li>• Feedback on UI/UX.</li>
+          <li>Joined as an early team member, helping build and launch the Bamboo Careers app from scratch.</li>
+          <li>Built and published the app on both App Store & Google Play.</li>
+          <li>Integrated backend using Firestore Database and Firebase services.</li>
+          <li>
+            Implemented core features: Career Paths, Salary Advisor, in-app purchases, and chatbot powered by ChatGPT.
+          </li>
+          <li>Collaborated on UI/UX improvements to boost user engagement.</li>
+          <li>Reached ~2,000 users with 50+ daily active users (DAU).</li>
         </ul>
+
         <p>
-          <strong>Features: </strong>Business app, Career Paths, Salary Advisor, Chatbot
+          <strong>Features:</strong> Business app, Career Paths, Salary Advisor, Chatbot
         </p>
+
         <p>
-          <strong>Technology: </strong>Redux, Firestore Database, Firebase services, IAP, ChatGPT
+          <strong>Tech stack:</strong> React Native, Redux, Firebase services, Firestore Database, IAP, ChatGPT
         </p>
       </div>
     ),
@@ -335,21 +329,13 @@ export const experience: TimelineItemType[] = [
   {
     date: "OCT 2022  -  APR 2023",
     location: "Asure Pro",
-    title: "Mobile Developer",
+    title: "Project Long Heng & Long Heng Biz - Mobile Developer",
     content: (
       <div>
-        <p>
-          <strong>Project Long Heng & Long Heng Biz - Mobile App</strong>
-        </p>
-        <p>
-          <strong>Part-time - Oursource project</strong>
-        </p>
-        <p>
-          <strong>Responsibilities:</strong>
-        </p>
         <ul>
-          <li>• Build & upload app to App Store & Play Store.</li>
-          <li>• Feedback on UI/UX.</li>
+          <li>Part-time - Outsource project</li>
+          <li>Build & upload app to App Store & Play Store.</li>
+          <li>Feedback on UI/UX.</li>
         </ul>
         <p>
           <strong>Features: </strong>Lifestyle app, Air-con service provider
@@ -361,40 +347,34 @@ export const experience: TimelineItemType[] = [
     ),
   },
   {
-    date: "Aug 2021  -  Oct 2022",
+    date: "Aug 2021 - Oct 2022",
     location: "Vietcetera",
-    title: "Software Developer- React Native/ReactJS/NodeJS",
+    title: "App Vietcetera - Software Developer",
     content: (
       <div>
         <p>
           <strong>App Vietcetera</strong>
         </p>
-        <p>
-          <strong>Responsibilities:</strong>
-        </p>
         <ul>
-          <li>• Rebuild project from scratch.</li>
-          <li>• Analyze requirements & make decisions on technical solutions.</li>
-          <li>• Write documentation.</li>
-          <li>• Suggest ideas, research new technologies.</li>
-          <li>• Mentor & review code for junior team member.</li>
-          <li>• Feedback on UI/UX.</li>
+          <li>Rebuild project from scratch.</li>
+          <li>Analyze requirements & make decisions on technical solutions.</li>
+          <li>Write documentation.</li>
+          <li>Suggest ideas, research new technologies.</li>
+          <li>Mentor & review code for junior team member.</li>
+          <li>Feedback on UI/UX.</li>
         </ul>
         <p>
           <strong>Features: </strong>Read Articles, Listen Podcast, Watch Video
         </p>
         <p>
-          <strong>Technology: </strong>Redux, RESTful API, GA4, SmartOcto
+          <strong>Technology: </strong>React Native/ReactJS/NodeJS, Redux, RESTful API, GA4, SmartOcto
         </p>
         <br />
         <p>
           <strong>Web CMS Vietcetera</strong>
         </p>
-        <p>
-          <strong>Responsibilities:</strong>
-        </p>
         <ul>
-          <li>• Build web CMS</li>
+          <li>Build web CMS</li>
         </ul>
         <p>
           <strong>Features: </strong>Podcast Management, Notification Management, Article Management,...
