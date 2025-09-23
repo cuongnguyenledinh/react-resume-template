@@ -270,10 +270,10 @@ export const portfolioItems: PortfolioItem[] = [
  */
 export const education: TimelineItemType[] = [
   {
-    date: "2014 - 2018",
+    date: "2014 - 2017",
     location: "Ho Chi Minh City University of Technology (HCMUT)",
     title: "Computer Science",
-    content: <p>Major: Computer Science. 3 years at HCMUT.</p>,
+    content: <p>Major: Computer Science</p>,
   },
 ];
 
