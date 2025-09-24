@@ -112,7 +112,7 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilePic,
-  description: `Experienced React Native Developer with 6+ years in mobile app development. Proven ability in testing, collaboration, and delivering high-performance apps.`,
+  description: `Experienced Front-end Developer with 6+ years of expertise in mobile app development, specializing in React Native. Skilled at building high-performance, scalable apps with a strong focus on testing, collaboration, and delivering seamless user experiences.`,
   aboutItems: [
     { label: "Location", text: "Ho Chi Minh City, Vietnam", Icon: MapIcon },
     { label: "Age", text: "29", Icon: CalendarIcon },
@@ -294,7 +294,7 @@ export const experience: TimelineItemType[] = [
           <strong>Features: </strong>Cloud at the Light Speed(CALS) - Low Code Development Platform
         </p>
         <p>
-          <strong>Tech stack: </strong>Zustand, Nitro/Native module, AWS-Amplify, Private Gitlab package, CI/CD
+          <strong>Technology: </strong>Zustand, Nitro/Native module, AWS-Amplify, Private Gitlab package, CI/CD
         </p>
       </div>
     ),
@@ -302,7 +302,7 @@ export const experience: TimelineItemType[] = [
   {
     date: "Oct 2022 - Aug 2024",
     location: "Bamboo Careers",
-    title: "Bamboo Careers - Mobile Developer",
+    title: "Project Bamboo Careers - Mobile Developer",
     content: (
       <div>
         <ul>
@@ -321,7 +321,7 @@ export const experience: TimelineItemType[] = [
         </p>
 
         <p>
-          <strong>Tech stack:</strong> React Native, Redux, Firebase services, Firestore Database, IAP, ChatGPT
+          <strong>Technology:</strong> React Native, Redux, Firebase services, Firestore Database, IAP, ChatGPT
         </p>
       </div>
     ),
@@ -334,8 +334,8 @@ export const experience: TimelineItemType[] = [
       <div>
         <ul>
           <li>Part-time - Outsource project</li>
-          <li>Build & upload app to App Store & Play Store.</li>
-          <li>Feedback on UI/UX.</li>
+          <li>Developed and published apps on App Store & Google Play.</li>
+          <li>Collaborated on UI/UX improvements to enhance usability.</li>
         </ul>
         <p>
           <strong>Features: </strong>Lifestyle app, Air-con service provider
@@ -349,19 +349,17 @@ export const experience: TimelineItemType[] = [
   {
     date: "Aug 2021 - Oct 2022",
     location: "Vietcetera",
-    title: "App Vietcetera - Software Developer",
+    title: "Project Vietcetera - Software Developer",
     content: (
       <div>
         <p>
           <strong>App Vietcetera</strong>
         </p>
         <ul>
-          <li>Rebuild project from scratch.</li>
-          <li>Analyze requirements & make decisions on technical solutions.</li>
-          <li>Write documentation.</li>
-          <li>Suggest ideas, research new technologies.</li>
-          <li>Mentor & review code for junior team member.</li>
-          <li>Feedback on UI/UX.</li>
+          <li>Rebuilt the app from scratch to improve performance and scalability.</li>
+          <li>Analyzed requirements and provided technical solutions.</li>
+          <li>Authored documentation and mentored team members through code reviews.</li>
+          <li>Suggested new ideas, researched technologies, and provided UI/UX feedback.</li>
         </ul>
         <p>
           <strong>Features: </strong>Read Articles, Listen Podcast, Watch Video
