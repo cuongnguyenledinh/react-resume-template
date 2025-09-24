@@ -356,10 +356,11 @@ export const experience: TimelineItemType[] = [
           <strong>App Vietcetera</strong>
         </p>
         <ul>
-          <li>Rebuilt the app from scratch to improve performance and scalability.</li>
+          <li>Rebuilt & published the app from scratch to improve performance and scalability.</li>
           <li>Analyzed requirements and provided technical solutions.</li>
           <li>Authored documentation and mentored team members through code reviews.</li>
           <li>Suggested new ideas, researched technologies, and provided UI/UX feedback.</li>
+          <li>Reached 30,000+ installs across App Store and Google Play, serving thousands of daily active users.</li>
         </ul>
         <p>
           <strong>Features: </strong>Read Articles, Listen Podcast, Watch Video
