@@ -80,9 +80,9 @@ export const heroData: Hero = {
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a Vietnamese-based <strong className="text-stone-100">Mobile Developer</strong>, currently working at{" "}
+        I'm a Vietnamese-based <strong className="text-stone-100">Front-end Developer</strong>, currently working at{" "}
         <strong className="text-stone-100">Quintet Systems</strong> as part of the R&D team, helping develop{" "}
-        <strong>Cloud at the Light Speed (CALS)</strong> - a modern Low Code Development Platform.
+        <strong>Cloud at the Light Speed(CALS)</strong> - a modern Low Code Development Platform.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
         In my free time, I love playing <strong className="text-stone-100">badminton</strong>, hitting the road on my{" "}
@@ -271,7 +271,7 @@ export const portfolioItems: PortfolioItem[] = [
 export const education: TimelineItemType[] = [
   {
     date: "2014 - 2017",
-    location: "Computer Science",
+    location: "Ho Chi Minh City",
     title: "Ho Chi Minh City University of Technology (HCMUT)",
     content: <p>Major: Computer Science</p>,
   },
@@ -327,7 +327,7 @@ export const experience: TimelineItemType[] = [
     ),
   },
   {
-    date: "OCT 2022  -  APR 2023",
+    date: "Oct 2022  -  Apr 2023",
     location: "Asure Pro",
     title: "Project Long Heng & Long Heng Biz - Mobile Developer",
     content: (
