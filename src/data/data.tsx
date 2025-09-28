@@ -145,7 +145,7 @@ export const skills: SkillGroup[] = [
     skills: [
       {
         name: "React",
-        level: 7,
+        level: 8,
       },
       {
         name: "Typescript",
@@ -175,15 +175,15 @@ export const skills: SkillGroup[] = [
       },
       {
         name: "Flutter",
-        level: 4,
+        level: 5,
       },
       {
         name: "Swift",
-        level: 3,
+        level: 4,
       },
       {
         name: "Kotlin",
-        level: 3,
+        level: 4,
       },
     ],
   },
@@ -393,9 +393,10 @@ export const testimonial: TestimonialSection = {
   imageSrc: testimonialImage,
   testimonials: [
     {
-      name: "My colleague 1",
-      text: "To be updated!",
-      image: "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/169.jpg",
+      name: "Ha Anh (Maddie) Tong",
+      text: "Working with Cuong on a React Native project, I was impressed by his strong technical knowledge and consistent adherence to standard patterns and best practices in mobile development. He consistently delivered high-quality work and was willing to support and transfer knowledge to more junior developers like myself. Regarding client-facing skills, Cuong effectively communicated with the customer to understand their needs and develop user-friendly app features with reliable integrations, bringing valuable digital solutions to the customer's business.\nAs a subject matter expert in React Native and mobile development, he not only stays up-to-date with new mobile technologies and practices but also has working knowledge in other areas of software development. Cuong will be a great asset to any team.",
+      image:
+        "https://media.licdn.com/dms/image/v2/D4E03AQFOzkhLyLqpCQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1708872455901?e=1761782400&v=beta&t=b5A63S0YSoe38Tx6chqe52rxBs6h0CsmqZxoeSIDzII",
     },
     {
       name: "My colleague 2",
