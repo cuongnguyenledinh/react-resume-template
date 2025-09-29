@@ -21,6 +21,8 @@ const Resume: FC = memo(() => {
           {experience.map((item, index) => (
             <WorkItem item={item} key={`${item.title}-${index}`} />
           ))}
+
+          <p>And more details in my CV...</p>
         </ResumeSection>
 
         <ResumeSection title="Skills">

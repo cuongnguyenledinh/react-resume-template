@@ -313,7 +313,9 @@ export const experience: TimelineItemType[] = [
             Implemented core features: Career Paths, Salary Advisor, in-app purchases, and chatbot powered by ChatGPT.
           </li>
           <li>Collaborated on UI/UX improvements to boost user engagement.</li>
-          <li>Reached ~2,000 users with 50+ daily active users (DAU).</li>
+          <li>
+            Reached 2,000+ users with 50+ daily active users (DAU) and initial revenue from 10+ Premium subscribers.
+          </li>
         </ul>
 
         <p>

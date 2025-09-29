@@ -62,7 +62,7 @@ const Testimonials: FC = memo(() => {
     setScrollValue(event.currentTarget.scrollLeft);
   }, []);
 
-  useInterval(next, 8000);
+  useInterval(next, 10000);
 
   // If no testimonials, don't render the section
   if (!testimonials.length) {
