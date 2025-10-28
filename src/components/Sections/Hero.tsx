@@ -19,6 +19,8 @@ const Hero: FC = memo(() => {
           fill
           placeholder="blur"
           priority
+          quality={90}
+          sizes="100vw"
           src={imageSrc}
         />
 
