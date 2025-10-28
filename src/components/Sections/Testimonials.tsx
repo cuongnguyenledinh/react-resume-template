@@ -1,5 +1,6 @@
 import classNames from "classnames";
 import { FC, memo, UIEventHandler, useCallback, useEffect, useMemo, useRef, useState } from "react";
+import Image from "next/image";
 
 import { isApple, isMobile } from "../../config";
 import { SectionId, testimonial } from "../../data/data";
@@ -88,7 +89,12 @@ const Testimonials: FC = memo(() => {
                 const isActive = index === activeIndex;
 
                 return (
-                  <Testimonial isActive={isActive} key={`${testimonial.name}-${index}`} testimonial={testimonial} />
+                  <Testimonial
+                    isActive={isActive}
+                    key={`${testimonial.name}-${index}`}
+                    testimonial={testimonial}
+                    index={index}
+                  />
                 );
               })}
             </div>
@@ -116,8 +122,8 @@ const Testimonials: FC = memo(() => {
   );
 });
 
-const Testimonial: FC<{ testimonial: Testimonial; isActive: boolean }> = memo(
-  ({ testimonial: { text, name, image }, isActive }) => (
+const Testimonial: FC<{ testimonial: Testimonial; isActive: boolean; index: number }> = memo(
+  ({ testimonial: { text, name, image }, isActive, index }) => (
     <div
       className={classNames(
         "flex w-full shrink-0 snap-start snap-always flex-col items-start gap-y-4 p-2 transition-opacity duration-1000 sm:flex-row sm:gap-x-6",
@@ -127,7 +133,9 @@ const Testimonial: FC<{ testimonial: Testimonial; isActive: boolean }> = memo(
         <div className="relative h-14 w-14 shrink-0 sm:h-16 sm:w-16">
           <QuoteIcon className="absolute -left-2 -top-2 h-4 w-4 stroke-black text-white" />
 
-          <img className="h-full w-full rounded-full" src={image} />
+          <Image className="h-full w-full rounded-full" src={image} alt={`avatar-${index}`} width={200} height={200} />
+
+          {/* <img className="h-full w-full rounded-full" src={image} alt={`avatar-${image}`} /> */}
         </div>
       ) : (
         <QuoteIcon className="h-5 w-5 shrink-0 text-white sm:h-8 sm:w-8" />
