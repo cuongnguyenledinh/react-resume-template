@@ -19,9 +19,6 @@ const Hero: FC = memo(() => {
           fill
           placeholder="blur"
           priority
-          sizes="(max-width: 768px) 100vw,
-         (max-width: 1200px) 90vw,
-         1408px"
           src={imageSrc}
         />
 
@@ -55,6 +52,7 @@ const Hero: FC = memo(() => {
 
         <div className="absolute inset-x-0 bottom-6 flex justify-center">
           <a
+            aria-label="Scroll to About"
             className="rounded-full bg-white p-1 ring-white ring-offset-2 ring-offset-gray-700/80 focus:outline-none focus:ring-2 sm:p-2"
             href={`/#${SectionId.About}`}>
             <ChevronDownIcon className="h-5 w-5 bg-transparent sm:h-6 sm:w-6" />

@@ -33,8 +33,15 @@ const nextConfig = {
         protocol: "https",
         hostname: "source.unsplash.com",
       },
+      {
+        protocol: "https",
+        hostname: "media.licdn.com",
+      },
+      {
+        protocol: "https",
+        hostname: "cloudflare-ipfs.com",
+      },
     ],
-    domains: ["media.licdn.com", "cloudflare-ipfs.com"],
   },
 };
 
