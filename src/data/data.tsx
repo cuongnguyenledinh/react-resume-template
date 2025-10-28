@@ -21,18 +21,6 @@ import portfolioImage4 from "../images/portfolio/longheng_1.jpg";
 import portfolioImage5 from "../images/portfolio/polymate_1.jpg";
 import portfolioImage1 from "../images/portfolio/vietcetera_1.jpg";
 import portfolioImage2 from "../images/portfolio/vietcetera_2.jpg";
-// import portfolioImage1 from "../images/portfolio/portfolio-1.jpg";
-// import portfolioImage2 from "../images/portfolio/portfolio-2.jpg";
-// import portfolioImage3 from "../images/portfolio/portfolio-3.jpg";
-// import portfolioImage4 from "../images/portfolio/portfolio-4.jpg";
-// import portfolioImage5 from "../images/portfolio/portfolio-5.jpg";
-// import portfolioImage6 from "../images/portfolio/portfolio-6.jpg";
-// import portfolioImage7 from "../images/portfolio/portfolio-7.jpg";
-// import portfolioImage8 from "../images/portfolio/portfolio-8.jpg";
-// import portfolioImage9 from "../images/portfolio/portfolio-9.jpg";
-// import portfolioImage10 from "../images/portfolio/portfolio-10.jpg";
-// import portfolioImage11 from "../images/portfolio/portfolio-11.jpg";
-import profilePic from "../images/profile_pic.jpg";
 import testimonialImage from "../images/testimonial.webp";
 import {
   About,
@@ -111,7 +99,8 @@ export const heroData: Hero = {
  * About section
  */
 export const aboutData: About = {
-  profileImageSrc: profilePic,
+  profileImageSrc:
+    "https://media.licdn.com/dms/image/v2/D5603AQGFSVCr-AXaAA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1720498682397?e=1762992000&v=beta&t=n9BlogarVvlGhOLrDWtnwsh7hdPfoFeGTj25VjoBnIQ",
   description: `Experienced Front-end Developer with 6+ years of expertise in mobile app development, specializing in React Native. Skilled at building high-performance, scalable apps with a strong focus on testing, collaboration, and delivering seamless user experiences.`,
   aboutItems: [
     { label: "Location", text: "Ho Chi Minh City, Vietnam", Icon: MapIcon },
