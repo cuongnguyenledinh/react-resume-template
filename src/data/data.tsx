@@ -5,7 +5,7 @@ import {
   CalendarIcon,
   FlagIcon,
   MapIcon,
-  SparklesIcon
+  SparklesIcon,
 } from '@heroicons/react/24/outline';
 
 import FacebookIcon from '../components/Icon/FacebookIcon';
@@ -33,15 +33,15 @@ import {
   SkillGroup,
   Social,
   TestimonialSection,
-  type TimelineItemType
+  type TimelineItemType,
 } from './dataDef';
 
 /**
  * Page meta data
  */
 export const homePageMeta: HomepageMeta = {
-  title: 'React Resume Template',
-  description: "Example site built with Tim Baker's react resume template"
+  title: 'Cuong Nguyen',
+  description: 'My portfolio website.',
 };
 
 /**
@@ -55,7 +55,7 @@ export const SectionId = {
   Resume: 'resume',
   Skills: 'skills',
   Stats: 'stats',
-  Testimonials: 'testimonials'
+  Testimonials: 'testimonials',
 } as const;
 
 export type SectionId = (typeof SectionId)[keyof typeof SectionId];
@@ -65,14 +65,14 @@ export type SectionId = (typeof SectionId)[keyof typeof SectionId];
  */
 export const heroData: Hero = {
   imageSrc: heroImage,
-  name: `Hi! I'm Cuong Nguyen.`,
+  name: `Hi, I'm Cuong Nguyen!`,
   description: (
     <>
       <p className='prose-sm text-stone-200 sm:prose-base lg:prose-lg'>
-        I'm a Vietnamese-based <strong className='text-stone-100'>Front-end Developer</strong>,
+        I'm a Vietnamese-based <strong className='text-stone-100'>Mobile Developer</strong>,
         currently working at <strong className='text-stone-100'>Quintet Systems</strong> as part of
-        the R&D team, helping develop <strong>Cloud at the Light Speed(CALS)</strong> - a modern Low
-        Code Development Platform.
+        the R&D team, helping develop <strong>Cloud at the Light Speed (CALS)</strong> - a modern
+        Low Code Development Platform.
       </p>
       <p className='prose-sm text-stone-200 sm:prose-base lg:prose-lg'>
         In my free time, I love playing <strong className='text-stone-100'>badminton</strong>,
@@ -87,14 +87,14 @@ export const heroData: Hero = {
       text: 'Resume',
       primary: true,
       Icon: ArrowDownTrayIcon,
-      target: '_blank'
+      target: '_blank',
     },
     {
       href: `#${SectionId.Contact}`,
       text: 'Contact',
-      primary: false
-    }
-  ]
+      primary: false,
+    },
+  ],
 };
 
 /**
@@ -102,7 +102,7 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profileImage,
-  description: `Experienced Front-end Developer with 6+ years of expertise in mobile app development, specializing in React Native. Skilled at building high-performance, scalable apps with a strong focus on testing, collaboration, and delivering seamless user experiences.`,
+  description: `Senior Mobile Developer with 7+ years of experience specializing in React Native and cross-platform mobile architecture.\n\nExpertise in building scalable production applications, developing native modules with Swift/Java/Kotlin, and delivering apps used by thousands of users.\n\nExperienced in leading small engineering teams, designing maintainable mobile architectures, and shipping products from concept to production.`,
   aboutItems: [
     { label: 'Location', text: 'Ho Chi Minh City, Vietnam', Icon: MapIcon },
     { label: 'Age', text: '29', Icon: CalendarIcon },
@@ -111,10 +111,10 @@ export const aboutData: About = {
     {
       label: 'Study',
       text: 'Ho Chi Minh City University of Technology (HCMUT)',
-      Icon: AcademicCapIcon
+      Icon: AcademicCapIcon,
     },
-    { label: 'Employment', text: 'Quintet Systems', Icon: BuildingOffice2Icon }
-  ]
+    { label: 'Employment', text: 'Quintet Systems', Icon: BuildingOffice2Icon },
+  ],
 };
 
 /**
@@ -126,61 +126,61 @@ export const skills: SkillGroup[] = [
     skills: [
       {
         name: 'Vietnamese',
-        level: 10
+        level: 10,
       },
       {
         name: 'English',
-        level: 6
-      }
-    ]
+        level: 6,
+      },
+    ],
   },
   {
     name: 'Frontend development',
     skills: [
       {
         name: 'React',
-        level: 8
+        level: 8,
       },
       {
         name: 'Typescript',
-        level: 6
+        level: 6,
       },
       {
         name: 'GraphQL',
-        level: 5
-      }
-    ]
+        level: 5,
+      },
+    ],
   },
   {
     name: 'Backend development',
     skills: [
       {
         name: 'Node.js',
-        level: 4
-      }
-    ]
+        level: 4,
+      },
+    ],
   },
   {
     name: 'Mobile development',
     skills: [
       {
         name: 'React Native',
-        level: 9
+        level: 9,
       },
       {
         name: 'Flutter',
-        level: 5
+        level: 5,
       },
       {
         name: 'Swift',
-        level: 4
+        level: 4,
       },
       {
         name: 'Kotlin',
-        level: 4
-      }
-    ]
-  }
+        level: 4,
+      },
+    ],
+  },
 ];
 
 /**
@@ -192,35 +192,35 @@ export const portfolioItems: PortfolioItem[] = [
     description:
       'A content hub connecting Vietnam with the world, offering free access to articles with save and share features.',
     url: 'https://apps.apple.com/us/app/vietcetera/id1564202068',
-    image: portfolioImage1
+    image: portfolioImage1,
   },
   {
     title: 'Vietcetera Play Store',
     description:
       'You can read all the content of Vietcetera for free, save and share articles, and listen to podcasts.',
     url: 'https://play.google.com/store/apps/details?id=com.vietcetera&hl=vi',
-    image: portfolioImage2
+    image: portfolioImage2,
   },
   {
     title: 'Portfolio Website cuongnguyen.dev',
     description: 'My personal portfolio website, built with Next.js',
     url: 'https://cuongnguyen.dev/',
-    image: portfolioImage3
+    image: portfolioImage3,
   },
   {
     title: 'Long Heng App',
     description:
       'Long Heng Air-Con Design Pte Ltd specialises in air conditioning installation, maintenance and cleaning service in Singapore.',
     url: 'https://cuongnguyen.dev/',
-    image: portfolioImage4
+    image: portfolioImage4,
   },
   {
     title: 'Polymate App',
     description:
       'Polymate - a geolocated social network with verified profiles that ensures real-time, authentic content while rewarding its users.',
     url: 'https://cuongnguyen.dev/',
-    image: portfolioImage5
-  }
+    image: portfolioImage5,
+  },
   // {
   //   title: "Project title 6",
   //   description: "Give a short description of your project here.",
@@ -267,8 +267,8 @@ export const education: TimelineItemType[] = [
     date: '2014 - 2017',
     location: 'Ho Chi Minh City',
     title: 'Ho Chi Minh City University of Technology (HCMUT)',
-    content: <p>Major: Computer Science</p>
-  }
+    content: <p>Major: Computer Science</p>,
+  },
 ];
 
 export const experience: TimelineItemType[] = [
@@ -292,7 +292,7 @@ export const experience: TimelineItemType[] = [
           package, CI/CD
         </p>
       </div>
-    )
+    ),
   },
   {
     date: 'Oct 2022 - Aug 2024',
@@ -327,7 +327,7 @@ export const experience: TimelineItemType[] = [
           IAP, ChatGPT
         </p>
       </div>
-    )
+    ),
   },
   {
     date: 'Oct 2022  -  Apr 2023',
@@ -347,7 +347,7 @@ export const experience: TimelineItemType[] = [
           <strong>Technology: </strong>Redux
         </p>
       </div>
-    )
+    ),
   },
   {
     date: 'Aug 2021 - Oct 2022',
@@ -390,8 +390,8 @@ export const experience: TimelineItemType[] = [
           <strong>Technology: </strong>ReactJS
         </p>
       </div>
-    )
-  }
+    ),
+  },
 ];
 
 /**
@@ -404,21 +404,21 @@ export const testimonial: TestimonialSection = {
       name: 'Ha Anh (Maddie) Tong',
       text: "Working with Cuong on a React Native project, I was impressed by his strong technical knowledge and consistent adherence to standard patterns and best practices in mobile development. He consistently delivered high-quality work and was willing to support and transfer knowledge to more junior developers like myself. Regarding client-facing skills, Cuong effectively communicated with the customer to understand their needs and develop user-friendly app features with reliable integrations, bringing valuable digital solutions to the customer's business.\nAs a subject matter expert in React Native and mobile development, he not only stays up-to-date with new mobile technologies and practices but also has working knowledge in other areas of software development. Cuong will be a great asset to any team.",
       image:
-        'https://media.licdn.com/dms/image/v2/D4E03AQFOzkhLyLqpCQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1708872455901?e=1761782400&v=beta&t=b5A63S0YSoe38Tx6chqe52rxBs6h0CsmqZxoeSIDzII'
+        'https://media.licdn.com/dms/image/v2/D4E03AQFOzkhLyLqpCQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1708872455901?e=1761782400&v=beta&t=b5A63S0YSoe38Tx6chqe52rxBs6h0CsmqZxoeSIDzII',
     },
     {
       name: 'My colleague 2',
       text: 'To be updated!',
       image:
-        'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/14.jpg'
+        'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/14.jpg',
     },
     {
       name: 'Someone else',
       text: 'To be updated!',
       image:
-        'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/69.jpg'
-    }
-  ]
+        'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/69.jpg',
+    },
+  ],
 };
 
 /**
@@ -432,24 +432,24 @@ export const contact: ContactSection = {
     {
       type: ContactType.Email,
       text: 'cuongnguyenledinh@gmail.com',
-      href: 'mailto:cuongnguyenledinh@gmail.com'
+      href: 'mailto:cuongnguyenledinh@gmail.com',
     },
     {
       type: ContactType.Location,
       text: 'Ho Chi Minh City, Vietnam',
-      href: 'https://maps.app.goo.gl/HypJLNccc3k2421i7'
+      href: 'https://maps.app.goo.gl/HypJLNccc3k2421i7',
     },
     {
       type: ContactType.Facebook,
       text: '@nldcuong',
-      href: 'https://www.facebook.com/@nldcuong'
+      href: 'https://www.facebook.com/@nldcuong',
     },
     {
       type: ContactType.Github,
       text: 'cuongnguyenledinh',
-      href: 'https://github.com/cuongnguyenledinh'
-    }
-  ]
+      href: 'https://github.com/cuongnguyenledinh',
+    },
+  ],
 };
 
 /**
@@ -459,7 +459,7 @@ export const socialLinks: Social[] = [
   { label: 'Github', Icon: GithubIcon, href: 'https://github.com/cuongnguyenledinh' },
   // {label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/8553186/tim-baker'},
   { label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/nldcuong/' },
-  { label: 'Facebook', Icon: FacebookIcon, href: 'https://www.facebook.com/nldcuong/' }
+  { label: 'Facebook', Icon: FacebookIcon, href: 'https://www.facebook.com/nldcuong/' },
   // {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/reactresume/'},
   // {label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/TimBakerx'},
 ];
