@@ -36,6 +36,10 @@ import {
   type TimelineItemType,
 } from './dataDef';
 
+// Calculate age dynamically based on birth year
+const BIRTH_YEAR = 1996;
+const calculateAge = (): number => new Date().getFullYear() - BIRTH_YEAR;
+
 /**
  * Page meta data
  */
@@ -105,12 +109,12 @@ export const aboutData: About = {
   description: `Senior Mobile Developer with 7+ years of experience specializing in React Native and cross-platform mobile architecture.\n\nExpertise in building scalable production applications, developing native modules with Swift/Java/Kotlin, and delivering apps used by thousands of users.\n\nExperienced in leading small engineering teams, designing maintainable mobile architectures, and shipping products from concept to production.`,
   aboutItems: [
     { label: 'Location', text: 'Ho Chi Minh City, Vietnam', Icon: MapIcon },
-    { label: 'Age', text: '29', Icon: CalendarIcon },
+    { label: 'Age', text: calculateAge().toString(), Icon: CalendarIcon },
     { label: 'Nationality', text: 'Vietnamese', Icon: FlagIcon },
     { label: 'Interests', text: 'Motorcycles, Badminton, Travel, Camping', Icon: SparklesIcon },
     {
       label: 'Study',
-      text: 'Ho Chi Minh City University of Technology (HCMUT)',
+      text: 'Ho Chi Minh City University of Technology (Bach Khoa HCM)',
       Icon: AcademicCapIcon,
     },
     { label: 'Employment', text: 'Quintet Systems', Icon: BuildingOffice2Icon },
@@ -122,62 +126,158 @@ export const aboutData: About = {
  */
 export const skills: SkillGroup[] = [
   {
-    name: 'Spoken languages',
+    name: 'Programming Languages',
     skills: [
       {
-        name: 'Vietnamese',
-        level: 10,
+        name: 'JavaScript',
+        level: 9,
       },
       {
-        name: 'English',
-        level: 6,
+        name: 'TypeScript',
+        level: 9,
       },
     ],
   },
   {
-    name: 'Frontend development',
-    skills: [
-      {
-        name: 'React',
-        level: 8,
-      },
-      {
-        name: 'Typescript',
-        level: 6,
-      },
-      {
-        name: 'GraphQL',
-        level: 5,
-      },
-    ],
-  },
-  {
-    name: 'Backend development',
-    skills: [
-      {
-        name: 'Node.js',
-        level: 4,
-      },
-    ],
-  },
-  {
-    name: 'Mobile development',
+    name: 'Mobile Development',
     skills: [
       {
         name: 'React Native',
         level: 9,
       },
       {
+        name: 'Swift',
+        level: 7,
+      },
+      {
+        name: 'Java/Kotlin',
+        level: 7,
+      },
+      {
         name: 'Flutter',
         level: 5,
       },
+    ],
+  },
+  {
+    name: 'Web Development',
+    skills: [
       {
-        name: 'Swift',
-        level: 4,
+        name: 'React',
+        level: 8,
       },
       {
-        name: 'Kotlin',
-        level: 4,
+        name: 'Next.js',
+        level: 7,
+      },
+      {
+        name: 'Vue.js',
+        level: 5,
+      },
+    ],
+  },
+  {
+    name: 'State Management',
+    skills: [
+      {
+        name: 'Redux Toolkit',
+        level: 8,
+      },
+      {
+        name: 'Zustand',
+        level: 8,
+      },
+      {
+        name: 'MobX',
+        level: 5,
+      },
+    ],
+  },
+  {
+    name: 'Backend & APIs',
+    skills: [
+      {
+        name: 'REST APIs',
+        level: 8,
+      },
+      {
+        name: 'GraphQL',
+        level: 7,
+      },
+      {
+        name: 'Firebase',
+        level: 8,
+      },
+      {
+        name: 'AWS (Amplify, S3, DynamoDB)',
+        level: 7,
+      },
+      {
+        name: 'NestJS',
+        level: 6,
+      },
+    ],
+  },
+  {
+    name: 'Testing & QA',
+    skills: [
+      {
+        name: 'Jest',
+        level: 7,
+      },
+      {
+        name: 'Detox',
+        level: 6,
+      },
+      {
+        name: 'Cypress',
+        level: 6,
+      },
+    ],
+  },
+  {
+    name: 'DevOps & Distribution',
+    skills: [
+      {
+        name: 'GitHub Actions',
+        level: 7,
+      },
+      {
+        name: 'Fastlane',
+        level: 7,
+      },
+      {
+        name: 'GitLab CI/CD',
+        level: 7,
+      },
+      {
+        name: 'App Store Connect',
+        level: 8,
+      },
+      {
+        name: 'Google Play Console',
+        level: 8,
+      },
+    ],
+  },
+  {
+    name: 'Development Tools',
+    skills: [
+      {
+        name: 'Xcode',
+        level: 8,
+      },
+      {
+        name: 'Android Studio',
+        level: 7,
+      },
+      {
+        name: 'Figma',
+        level: 6,
+      },
+      {
+        name: 'Proxyman',
+        level: 6,
       },
     ],
   },

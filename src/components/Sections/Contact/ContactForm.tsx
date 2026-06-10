@@ -1,5 +1,5 @@
-import { useForm, ValidationError } from "@formspree/react";
-import { FC, memo, useCallback, useMemo, useState } from "react";
+import { useForm, ValidationError } from '@formspree/react';
+import { FC, memo, useCallback, useMemo, useState } from 'react';
 
 interface FormData {
   name: string;
@@ -10,15 +10,15 @@ interface FormData {
 const ContactForm: FC = memo(() => {
   const defaultData = useMemo(
     () => ({
-      name: "",
-      email: "",
-      message: "",
+      name: '',
+      email: '',
+      message: '',
     }),
-    [],
+    []
   );
 
   const [data, setData] = useState<FormData>(defaultData);
-  const [state, handleSubmit] = useForm("xpwjvqdl");
+  const [state, handleSubmit] = useForm('xpwjvqdl');
 
   const onChange = useCallback(
     <T extends HTMLInputElement | HTMLTextAreaElement>(event: React.ChangeEvent<T>): void => {
@@ -28,11 +28,11 @@ const ContactForm: FC = memo(() => {
 
       setData({ ...data, ...fieldData });
     },
-    [data],
+    [data]
   );
 
   if (state.succeeded) {
-    return <p className="prose leading-6 text-neutral-300">Thanks you!</p>;
+    return <p className='prose leading-6 text-neutral-300'>Thanks you!</p>;
   }
 
   // const handleSendMessage = useCallback(
@@ -47,51 +47,52 @@ const ContactForm: FC = memo(() => {
   // );
 
   const inputClasses =
-    "bg-neutral-700 border-0 focus:border-0 focus:outline-none focus:ring-1 focus:ring-orange-600 rounded-md placeholder:text-neutral-400 placeholder:text-sm text-neutral-200 text-sm";
+    'bg-neutral-700 border-0 focus:border-0 focus:outline-none focus:ring-1 focus:ring-orange-600 rounded-md placeholder:text-neutral-400 placeholder:text-sm text-neutral-200 text-sm';
 
   return (
-    <form className="grid min-h-[320px] grid-cols-1 gap-y-4" method="POST" onSubmit={handleSubmit}>
+    <form className='grid min-h-[320px] grid-cols-1 gap-y-4' method='POST' onSubmit={handleSubmit}>
       <input
         className={inputClasses}
-        id="name"
-        name="name"
+        id='name'
+        name='name'
         onChange={onChange}
-        placeholder="Name"
+        placeholder='Name'
         required
-        type="text"
+        type='text'
       />
       <input
-        autoComplete="email"
+        autoComplete='email'
         className={inputClasses}
-        id="email"
-        name="email"
+        id='email'
+        name='email'
         onChange={onChange}
-        placeholder="Email"
+        placeholder='Email'
         required
-        type="email"
+        type='email'
       />
-      <ValidationError errors={state.errors} field="email" prefix="Email" />
+      <ValidationError errors={state.errors} field='email' prefix='Email' />
       <textarea
         className={inputClasses}
-        id="message"
+        id='message'
         maxLength={250}
-        name="message"
+        name='message'
         onChange={onChange}
-        placeholder="Message"
+        placeholder='Message'
         required
         rows={6}
       />
-      <ValidationError errors={state.errors} field="message" prefix="Message" />
+      <ValidationError errors={state.errors} field='message' prefix='Message' />
       <button
-        aria-label="Submit contact form"
-        className="w-max rounded-full border-2 border-orange-600 bg-stone-900 px-4 py-2 text-sm font-medium text-white shadow-md outline-none hover:bg-stone-800 focus:ring-2 focus:ring-orange-600 focus:ring-offset-2 focus:ring-offset-stone-800"
+        aria-label='Submit contact form'
+        className='w-max rounded-full border-2 border-orange-600 bg-stone-900 px-4 py-2 text-sm font-medium text-white shadow-md outline-none hover:bg-stone-800 focus:ring-2 focus:ring-orange-600 focus:ring-offset-2 focus:ring-offset-stone-800'
         disabled={state.submitting}
-        type="submit">
+        type='submit'
+      >
         Send Message
       </button>
     </form>
   );
 });
 
-ContactForm.displayName = "ContactForm";
+ContactForm.displayName = 'ContactForm';
 export default ContactForm;
