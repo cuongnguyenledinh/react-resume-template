@@ -106,7 +106,7 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profileImage,
-  description: `Senior Mobile Developer with 7+ years of experience specializing in React Native and cross-platform mobile architecture.\n\nExpertise in building scalable production applications, developing native modules with Swift/Java/Kotlin, and delivering apps used by thousands of users.\n\nExperienced in leading small engineering teams, designing maintainable mobile architectures, and shipping products from concept to production.`,
+  description: `Mobile Developer with 7+ years of experience specializing in React Native and cross-platform mobile architecture.\n\nExpertise in building scalable production applications, developing native modules with Swift/Java/Kotlin, and delivering apps used by thousands of users.\n\nExperienced in leading small engineering teams, designing maintainable mobile architectures, and shipping products from concept to production.`,
   aboutItems: [
     { label: 'Location', text: 'Ho Chi Minh City, Vietnam', Icon: MapIcon },
     { label: 'Age', text: calculateAge().toString(), Icon: CalendarIcon },
